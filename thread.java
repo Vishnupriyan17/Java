@@ -6,6 +6,12 @@ class one extends Thread
         for(int i =0;i<10;i++)
         {
             System.out.println("Hi");
+            try{
+                Thread.sleep(10);       //it will wait for 10 ms to execute next
+        }
+        catch(InterruptedException e){
+            e.printStackTrace();
+        }
         }
     }
 }
@@ -15,6 +21,13 @@ class two extends Thread{
         for(int i =0;i<10;i++)
         {
             System.out.println("Bye");
+            try{
+                Thread.sleep(10);   //it will wait for 10 ms to execute next 
+        }
+        catch(InterruptedException e){
+            e.printStackTrace();
+        }
+            
         }
     }
 }
@@ -25,6 +38,13 @@ public class thread
         two b = new two();
 
         a.start(); //start is the fun which is used to run the thread
+        try{
+            Thread.sleep(6);
+    }
+    catch(InterruptedException e){
+        e.printStackTrace();
+    }
+        
         b.start();
     }
 }
