@@ -7,7 +7,8 @@ public class set {
     public static void main(String[] args) {
         //Hashset will not allow duplicate elements and also does not print the values in sorted format
         //syntax:
-          Set<Integer> nums = new HashSet<Integer>();
+          Set<Integer> nums = new HashSet<Integer>();   
+          //when to use ? If you don’t want to maintain insertion order but want to store unique objects
           nums.add(45);
           nums.add(55);
           nums.add(65);
@@ -19,6 +20,7 @@ public class set {
 
           //if we want to sort the input we can use TreeSet
           Set<Integer> num = new TreeSet<Integer>();
+          //when to use ? If you want to sort the elements according to some Comparator then use TreeSet
           num.add(33);
           num.add(12);
           num.add(2);
