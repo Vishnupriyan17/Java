@@ -43,5 +43,19 @@ public class Array_List {
         //   o/p:56-(value of index 3)
         System.out.println(num.indexOf(90));   //this method is used to show the index by using values
         //    o/p:1-(index of value 90)
+
+
+        ArrayList <String> name = new ArrayList<>();
+
+        //add the elements to arraylist
+        name.add("vishnu");
+        name.add("priyan");
+        name.add("harish");
+        name.add("vimal");
+        System.out.println("printing the elements before adding to pre index: "+name);
+        //add elements to the already added index
+        name.add(2,"logesh");
+
+
     }
 }
