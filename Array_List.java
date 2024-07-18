@@ -11,6 +11,7 @@ public class Array_List {
         //if we are just print the values in the arraylist without using their index we can use collections
 
         Collection <Integer> nums = new ArrayList<Integer> ();
+    
         nums.add(14);
         nums.add(45);
         nums.add(56);
